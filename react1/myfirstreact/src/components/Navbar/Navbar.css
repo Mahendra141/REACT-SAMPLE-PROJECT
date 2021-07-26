@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: purple;
+    color: burlywood;
+}
+.Logo{
+    font-size: 200px;
+    color: lime;
+    
+}
+.nav-links{
+display: flex;
+justify-content: flex-end;
+list-style: none;
+width: 75%;
+}
+.home,
+.skills,
+.contacts,
+.about,
+.signup{
+text-decoration: none;
+color: dodgerblue;
+font-size: 25px;
+padding: 10px 20px;
+margin: 0 10px;
+cursor: pointer;
+}
+.signup{
+    border: 1px solid rgb(211, 148, 32);
+    border-radius: 6px;
+}
+.mobile-menu-icon{
+    display:none;
+}
+@media screen and (max-width: 780px){
+    .log{
+        display: flex;
+        position: absolute;
+        top:20px;
+        left:40px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: saddlebrown;
+        left: 0;
+        top: 80px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,
+    .skills,
+    .contacts,
+    .about,
+    .signup{
+        color:white;
+        text-align: center;
+        padding: 35px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .signup{
+        border: none;
+    }
+    .mobile.menu.icon{
+        display: block;
+        position: absolute;
+        color:white;
+        background-color: tomato;
+        border: none;
+        outline: none;
+        top: 20px;
+        right: 30px;
+
+    }
+}
